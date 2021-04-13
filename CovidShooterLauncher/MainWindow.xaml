@@ -1,0 +1,20 @@
+﻿<Window x:Class="CovidShooterLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CovidShooterLauncher"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ContentRendered="Window_ContentRendered"
+        Title="Covid Shooter Launcher" Height="576" Width="1080">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="1019*"/>
+        </Grid.ColumnDefinitions>
+        <Image Stretch="UniformToFill" Source="images/background.png" HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="-24,0,0,0" />
+        <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0, 0, 5, 0" Grid.Column="1" />
+        <Button Name="PlayButton" Content="Checking For Updates" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Bold" Margin="333,0,0,15" VerticalAlignment="Bottom" HorizontalAlignment="Left" MinWidth=" 150" Foreground="#DD000000" Background="#FFC76809" BorderBrush="Black" Grid.Column="1"/>
+    </Grid>
+</Window>
